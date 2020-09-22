@@ -94,3 +94,23 @@ li a:hover {
     margin: 70px;
     display: inline-block;
 }
+
+#work  {
+display: flex;
+background-color: #333;
+padding: 20px;
+
+}
+.card {
+    width: 300px;
+    margin: 10px;
+    background-color: white;
+}
+
+.card img{
+    width: 300px;
+    height: 150px;
+}
+#text{
+    color: white;
+}
