@@ -114,3 +114,22 @@ padding: 20px;
 #text{
     color: white;
 }
+
+#contact {
+    display: flex;
+    position: relative;
+    background-color:rgb(240, 240, 240);
+    padding: 20px;
+    padding-top: 50px;
+}
+
+#form{
+    background-color: white;
+    position: absolute;
+    right: 20px;
+    width: 600px;
+    padding: 10px;
+}
+
+
+
