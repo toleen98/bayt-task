@@ -101,6 +101,13 @@ background-color: #333;
 padding: 20px;
 
 }
+
+.rBtn {
+    top:-20px; 
+    position: absolute;
+    right:  20px;
+    padding: 10px;
+}
 .card {
     width: 300px;
     margin: 10px;
@@ -131,5 +138,20 @@ padding: 20px;
     padding: 10px;
 }
 
+#follow {
+    background-color: black;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 20px;
+}
 
+.btns button {
+    background-color:rgb(0, 150, 136);
+    color: white;
+    font-weight: 200;
+    width: 30px ;
+    height: 30px;
+    border: 2px solid rgb(0, 150, 136);
+}
 
