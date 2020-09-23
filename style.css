@@ -9,7 +9,6 @@ ul {
 li {
     float: left;
 }
-  
 
 li a {
     display: block;
@@ -64,7 +63,20 @@ li a:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+#navRight {
+    position: absolute;
+    right: 10px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
+#navRight input {
+    visibility: hidden;
+    margin-right: 10;
+}
 .container {
     position: relative;
     text-align: center;
