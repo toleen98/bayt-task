@@ -1,3 +1,7 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .nav {
     overflow: hidden;
     background-color: black;
@@ -19,7 +23,7 @@
   }
   
   .nav a.active {
-    background-color: #4CAF50;
+    background-color: rgb(0, 150, 136)
     color: white;
   }
 
@@ -117,17 +121,18 @@
 #work  {
 display: flex;
 background-color: #333;
-padding: 10px;
+padding: 30px 10px;
 flex-wrap: nowrap;
 }
+
 #work > div {
   margin: 10px;
 }
 .rBtn {
-    top:-20px; 
-    position: absolute;
-    right:  20px;
-    padding: 10px;
+  top:-20px; 
+  position: absolute;
+  right:  20px;
+  padding: 10px;
 }
 .card {
   width: 300px;
@@ -138,40 +143,82 @@ flex-wrap: nowrap;
   padding: 10px;
 }
 
-/* .cardText p {
-
-} */
-
 .card img{
     width: 300px;
     height: 150px;
 }
+
 #text{
     color: white;
 }
 
 #contact {
-    display: flex;
-    position: relative;
-    background-color:rgb(240, 240, 240);
-    padding: 20px;
-    padding-top: 50px;
+  display: flex;
+  position: relative;
+  background-color:rgb(240, 240, 240);
+  padding: 50px 10px;
+  flex-wrap: nowrap;
+}
+
+.rondedBtn {
+  border: 2px solid rgb(0, 150, 136); 
+  border-radius:100%; 
+  padding:15px; 
+  background-color:  rgb(0, 150, 136) ;
+  color: white;
+}
+
+u {
+  text-decoration: none; 
+  border-bottom: 5px solid  rgb(0, 150, 136);
+}
+.contactUs p i{
+  font-size: large;
+  color: rgb(0, 150, 136);
 }
 
 #form{
-    background-color: white;
-    position: absolute;
-    right: 20px;
-    width: 600px;
-    padding: 10px;
+  background-color: white;
+  position: absolute;
+  right: 20px;
+  width: 600px;
+  padding: 20px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-size: 14;
+ 
 }
 
+form input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  width: 100%;
+  margin: 10px 0px;
+}
+
+
+
+#check {
+  margin: 2px 0px;
+  width: 30;
+
+}
+
+.sendBtn {
+  right: 20px; 
+  position: absolute;
+  background-color: black; 
+  color: white;
+  border: 2px solid black;
+  padding:5px 10px;
+}
 #follow {
-    background-color: black;
-    text-align: center;
-    color: white;
-    position: relative;
-    padding: 20px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 20px;
 }
 
 .btns button {
@@ -189,16 +236,20 @@ flex-wrap: nowrap;
   .nav a.icon {
     float: right;
     display: block;
-  }
-  #work {
-    flex-direction: column;
     
   }
-  #work .card {
+  #form {
+    position: initial;
+    right: 0px;
+    width: 96%;
+  }
+  #work,#contact {flex-direction: column;}
+
+  #work .card, #form {
     margin: 10px 0px;
   }
- 
-  #work .card, #work .card img  {
+  
+  #work .card, #work .card img {
     width: 100%;
   }
  
