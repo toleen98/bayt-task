@@ -84,30 +84,6 @@
   }
   
 
-@media screen and (max-width: 600px) {
-    .nav a:not(:first-child), .nav div, #navRight  {display: none;}
-    
-    .nav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  .nav .icon {
-    display: none;
-  }
-  @media screen and (max-width: 600px) {
-    .nav.responsive {position: relative;}
-    .nav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .nav.responsive a, .nav.responsive div{
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
 .container {
     position: relative;
     text-align: center;
@@ -141,10 +117,12 @@
 #work  {
 display: flex;
 background-color: #333;
-padding: 20px;
-
+padding: 10px;
+flex-wrap: nowrap;
 }
-
+#work > div {
+  margin: 10px;
+}
 .rBtn {
     top:-20px; 
     position: absolute;
@@ -152,10 +130,17 @@ padding: 20px;
     padding: 10px;
 }
 .card {
-    width: 300px;
-    margin: 10px;
-    background-color: white;
+  width: 300px;
+  background-color: white;   
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+.cardText {
+  padding: 10px;
+}
+
+/* .cardText p {
+
+} */
 
 .card img{
     width: 300px;
@@ -198,3 +183,42 @@ padding: 20px;
     border: 2px solid rgb(0, 150, 136);
 }
 
+
+@media screen and (max-width: 600px) {
+  .nav a:not(:first-child), .nav div, #navRight  {display: none;}
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+  #work {
+    flex-direction: column;
+    
+  }
+  #work .card {
+    margin: 10px 0px;
+  }
+ 
+  #work .card, #work .card img  {
+    width: 100%;
+  }
+ 
+
+}
+.nav .icon {
+  display: none;
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a, .nav.responsive div{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

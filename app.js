@@ -18,6 +18,7 @@
 
 }
 
+//make nav responsive
 const resNav = function () {
     var x = document.getElementById("myTopnav");
     if (x.className === "nav") {
