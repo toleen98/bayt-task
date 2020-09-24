@@ -2,6 +2,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* nav section,  */
 .nav {
     overflow: hidden;
     background-color: black;
@@ -53,41 +54,42 @@ body {
   }
   
 .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
   
 .dropdown-content a:hover {
-    background-color: #ddd;
-  }
+  background-color: #ddd;
+}
   
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
+
 #navRight {
-    position: absolute;
-    right: 10px;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  position: absolute;
+  right: 10px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 #navRight input {
-    visibility: hidden;
-    margin-right: 10;
+  visibility: hidden;
+  margin-right: 10;
 }
 
 .nav .icon {
-    display: none;
-  }
+  display: none;
+}
   
-
+/* cover img  */
 .container {
     position: relative;
     text-align: center;
@@ -102,6 +104,7 @@ body {
     padding: 10px;
 }
 
+/* team section */
 .profile {
     width: 150px;
     height: 150px;
@@ -117,10 +120,16 @@ body {
 }
 
 .info {
-    margin: 70px;
-    display: inline-block;
+  margin: 70px;
+  display: inline-block;
 }
 
+.members {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* work section */
 #work  {
 display: flex;
 background-color: #333;
@@ -155,6 +164,7 @@ flex-wrap: nowrap;
     color: white;
 }
 
+/* contact section */
 #contact {
   display: flex;
   position: relative;
@@ -216,6 +226,8 @@ form input {
   border: 2px solid black;
   padding:5px 10px;
 }
+
+/* follow section */
 #follow {
   background-color: black;
   text-align: center;
@@ -233,7 +245,7 @@ form input {
     border: 2px solid rgb(0, 150, 136);
 }
 
-/* responsive */
+/* responsive screens */
 @media screen and (max-width: 700px)  {
   .nav a:not(:first-child), .nav div, #navRight  {display: none;}
   .nav a.icon {
@@ -296,9 +308,10 @@ form input {
 
 @media screen and (max-width: 1200px)  {
  
-  #team, .members { flex-direction: column;}
+  #team { flex-direction: column;}
+ 
  #wok{
-   display: block;
+   
    
  }
   #work div {
